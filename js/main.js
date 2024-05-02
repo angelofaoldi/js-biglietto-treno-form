@@ -56,13 +56,13 @@ invia.addEventListener('click', function () {
 
 
 
-    
+
     // adesso si stampa in console
 
     console.log('Distanza percorsa: ', distanzaKm, 'km');
     console.log('Eta: ', etaUtente, 'anni');
     console.log('Prezzo al km: ', prezzoKm);
-    console.log ('Prezzo biglietto: ', prezzoBiglietto);
+    console.log('Prezzo biglietto: ', prezzoBiglietto);
 
 
 })
