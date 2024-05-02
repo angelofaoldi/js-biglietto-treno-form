@@ -64,7 +64,7 @@ invia.addEventListener('click', function () {
     console.log('Prezzo al km: ', prezzoKm);
     console.log('Prezzo biglietto: ', prezzoBiglietto);
 
-
+    
 })
 
 

@@ -55,7 +55,48 @@ ________________________________________________________________________________
 //BIGLIETTO
 
 10) INVIO DATI + visualizzare a questo punto un biglietto del treno
-11) prezzo finale con due decimali cifra arrotondata 
+11) prezzo finale con due decimali cifra arrotondata
+
+<!--
+    MILESTONE #2
+
+        Il layout è scomponibile in due sezioni.
+
+        La prima sezione è composta da:
+        - titolo centrato: CALCOLA IL PREZZO DEL TUO BIGLIETTO
+        - contenitore div con microlayout
+        Il microlayout è composto da:
+        - 2 input (username + km)
+        - dropdown fascia d'età
+        - 2 bottoni: Genera Annulla
+
+        La seconda sezione è composta da:
+        - titolo centrato: IL TUO BIGLIETTO
+        - contenitore div con microlayout
+        Il microlayout è composto da:
+        - una riga: DETTAGLIO PASSEGGERI
+        - due colonne rapporto 20/80:
+            1) CARD: NOME PASSEGGERO Jon Snow bg-color: grey;
+            2) tabella (?)
+
+                OFFERTA   CARROZZA   CODICE CP   BIGLIETTO
+                Biglietto   5          92911       2,10 &euro;
+                Standard
+        
+        RIFLESSIONI:
+        - SEZIONE 1
+            - creazione del DROPDOWN Fascia d'età
+            - creazione del bottone ANNULLA che svuota tutti i campi
+            - microlayout = 3 input sopra e 2 bottoni sotto
+
+        - SEZIONE 2
+            - i dati generati dalla tabella richiedono la creazione e l'implementazione di nuove variabili js
+            - le nuove variabili js sono:
+                - Offerta = VARIABILE = dipende dai dati inseriti (Biglietto Standard, Biglietto Ridotto);
+                - Carrozza = COSTANTE = genera numero casuale da 1 a 12;
+                - Codice CP = COSTANTE = genera numero casuale di 5 cifre;
+                - Costo Biglietto = VARIABILE = dipende dai dati inseriti (km + fascia d'età);
+-->
 
 
 
