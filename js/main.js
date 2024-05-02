@@ -49,9 +49,20 @@ invia.addEventListener('click', function () {
         // stesso discorso di prima, si aggiorna la variabile prezzoBiglietto
         prezzoBiglietto = Math.round(prezzoBigliettoAnziani * 100) / 100;
 
-    } 
+
+     // RITORNO ALLA NORMALITà: COSTO BIGLIETTO INTERO
+    } else { prezzoBiglietto = Math.round(prezzoBiglietto * 100) / 100; }
 
 
+
+
+    
+    // adesso si stampa in console
+
+    console.log('Distanza percorsa: ', distanzaKm, 'km');
+    console.log('Eta: ', etaUtente, 'anni');
+    console.log('Prezzo al km: ', prezzoKm);
+    console.log ('Prezzo biglietto: ', prezzoBiglietto);
 
 
 })
