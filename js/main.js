@@ -26,16 +26,21 @@ invia.addEventListener('click', function () {
     let prezzoBiglietto = (distanzaKm * prezzoKm);
 
     // STRUTTURA IF-ELSE PER GESTIRE I CASI DI SCONTISTICA
+
+    // SCONTO GIOVANI
     if (etaUtente < 18) {
 
         // calcolare il prezzo del biglietto scontato per i giovani
         const scontatoGiovani = (prezzoBiglietto * scontoGiovani) / 100;
         const prezzoBigliettoGiovani = (prezzoBiglietto - scontatoGiovani);
+
+        // una volta ottenuto lo sconto giovani, il valore del prezzoBiglietto va aggiornato
+        // l'operazione necessita di un arrotondamento alla seconda cifra decimale
+        prezzoBiglietto = Math.round(prezzoBigliettoGiovani * 100) / 100;
+
+    } else {
         
-
-
-
-
+    // SCONTO ANZIANI
 
     }
 
