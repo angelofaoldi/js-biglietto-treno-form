@@ -37,12 +37,19 @@ invia.addEventListener('click', function () {
         // una volta ottenuto lo sconto giovani, il valore del prezzoBiglietto va aggiornato
         // l'operazione necessita di un arrotondamento alla seconda cifra decimale
         prezzoBiglietto = Math.round(prezzoBigliettoGiovani * 100) / 100;
+    
 
-    } else {
-        
-    // SCONTO ANZIANI
+     // SCONTO ANZIANI
+    } else if (etaUtente > 65) {
 
-    }
+        // calcolare il prezzo del biglietto scontato per gli anziani
+        const scontatoAnziani = (prezzoBiglietto * scontoAnziani) / 100;
+        const prezzoBigliettoAnziani = (prezzoBiglietto - scontatoAnziani);
+
+        // stesso discorso di prima, si aggiorna la variabile prezzoBiglietto
+        prezzoBiglietto = Math.round(prezzoBigliettoAnziani * 100) / 100;
+
+    } 
 
 
 
